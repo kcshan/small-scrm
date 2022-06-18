@@ -1,0 +1,17 @@
+form { margin: 20px auto;
+  fieldset { margin: 20px auto; padding: 20px; border: 2px solid #eee;
+    legend { font-size: 1.4rem; }
+    label { display: inline-block; width: 33%;
+      span,
+      input,
+      select { font-size: 1.8rem; }
+      span { display: inline-block; width: 20%; }
+      input { border: 1px solid #ccc;
+        &:not([type="radio"]) { width: 50%; }
+        &[type="radio"] { margin-right: 10px; }
+      }
+      select { width: 50%; border: 1px solid #ccc; }
+    }
+  }
+  button { font-size: 1.4rem; float: right; padding: 10px 20px; border: 2px solid #eee; background: transparent; }
+}

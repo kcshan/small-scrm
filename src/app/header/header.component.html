@@ -1,0 +1,12 @@
+<div>
+  <div class="logo">logo</div>
+  <nav>
+    <a 
+      *ngFor="let link of links" 
+      [routerLink]="[link.sref]"
+      [queryParams]="{id: 1, name: 'crm'}" 
+      routerLinkActive="active"
+    >{{link.name}}</a>
+  </nav>
+</div>
+

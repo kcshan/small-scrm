@@ -1,0 +1,23 @@
+div {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  .logo { 
+    height: 80%; 
+    font-size: 1.8rem;
+    margin-left: 1vw;
+    color: #fff;
+  }
+  nav { 
+    margin-left: 2.5vw;
+    a {
+      font-size: 1.8rem;
+      margin-left: 1vw;
+      color: #fff;
+      &.active { border-bottom: 1px solid #eee; }
+    }
+  }
+}
+
